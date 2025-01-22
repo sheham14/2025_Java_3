@@ -14,7 +14,8 @@ public class FunWithCreatingDBs {
 
     public static void main(String[] args) {
         // Open a connection
-        try(Connection conn = DriverManager.getConnection(
+        try(
+            Connection conn = DriverManager.getConnection(
                 DBProperties.DATABASE_URL, DBProperties.DATABASE_USER, DBProperties.DATABASE_PASSWORD);
             Statement stmt = conn.createStatement();
         ) {
