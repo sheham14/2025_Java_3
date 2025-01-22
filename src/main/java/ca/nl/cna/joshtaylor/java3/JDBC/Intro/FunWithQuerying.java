@@ -1,6 +1,6 @@
 package ca.nl.cna.joshtaylor.java3.JDBC.Intro;
 
-import ca.nl.cna.joshtaylor.java3.JDBC.DBProperties;
+import ca.nl.cna.joshtaylor.java3.JDBC.MariaDBProperties;
 
 import java.sql.*;
 
@@ -16,7 +16,7 @@ public class FunWithQuerying {
 
         try{
             Connection conn = DriverManager.getConnection(
-                    DBProperties.DATABASE_URL + DB_NAME, DBProperties.DATABASE_USER, DBProperties.DATABASE_PASSWORD);
+                    MariaDBProperties.DATABASE_URL + DB_NAME, MariaDBProperties.DATABASE_USER, MariaDBProperties.DATABASE_PASSWORD);
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(QUERY);
 
