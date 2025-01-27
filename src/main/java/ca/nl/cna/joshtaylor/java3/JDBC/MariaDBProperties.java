@@ -17,6 +17,8 @@ public class MariaDBProperties {
     //TODO Update this with your Password!
     public static final String DATABASE_PASSWORD = "oU65KCZ3q";
 
+    public static final String DATABASE_URL_COMPLETE = "jdbc:mariadb://localhost:3306?user="+ DATABASE_USER +"&password=" + DATABASE_PASSWORD;
+
     /**
      * Register the driver using two options - Class.forName and Driver class
      * //TODO clean this method up / split it into two methods?
@@ -48,9 +50,7 @@ public class MariaDBProperties {
             printStream.println("Error: unable to load driver class!");
             return false;
         }
-
         return true;
     }
-
 
 }
