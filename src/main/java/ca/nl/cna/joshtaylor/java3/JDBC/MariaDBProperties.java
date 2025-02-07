@@ -15,7 +15,7 @@ public class MariaDBProperties {
     public static final String DATABASE_USER = "root";
 
     //TODO Update this with your Password!
-    public static final String DATABASE_PASSWORD = "oU65KCZ3q";
+    public static final String DATABASE_PASSWORD = "root";
 
     public static final String DATABASE_URL_COMPLETE = "jdbc:mariadb://localhost:3306?user="+ DATABASE_USER +"&password=" + DATABASE_PASSWORD;
 
